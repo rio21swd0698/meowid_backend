@@ -12,7 +12,7 @@ CORS(app)
 # === KONFIGURASI ===
 MODEL_PATH = 'meowid_model.h5'
 MODEL_FILE_ID = '1vJc5TZzekDR8EtmHWWC6e3CHxZ1Sv5Mp'  # ← Google Drive file ID
-CONFIDENCE_THRESHOLD = 0.6  # 60%
+CONFIDENCE_THRESHOLD = float(os.getenv('CONFIDENCE_THRESHOLD', 0.4))  # 40%
 
 class_names = ['Anggora', 'Bengal', 'Persian', 'Siamese', 'Sphynx', 'Tabby']
 
