@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+.env
+__pycache__/
+*.pyc
+
+# Model dan data besar
+*.h5
+*.zip
+temp_image.jpg
+
+# Jupyter & editor
+.ipynb_checkpoints/
+.vscode/
+
+# OS/system files
+.DS_Store
+Thumbs.db
